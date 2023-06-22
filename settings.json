@@ -1,0 +1,129 @@
+{
+    "vim.normalModeKeyBindings": [
+        {
+          "before" : ["<leader>","e"],
+          "commands" : [
+            "workbench.view.explorer"
+          ]
+        },
+        {
+            "before" : ["<leader>","f", "f"],
+            "commands" : [
+              "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before" : ["<leader>", "j"],
+            "commands" :[
+                "workbench.action.openNextRecentlyUsedEditor"
+            ]
+        },
+        // close currently opened tab
+        {
+            "before": ["<leader>", "x"],
+            "commands": [
+                "workbench.action.closeActiveEditor"
+            ]
+        },
+        // close all tab group 
+        {
+            "before": ["<leader>", "q"],
+            "commands": [
+                "workbench.action.closeAllEditors"
+            ]
+        }
+      ],
+    "window.titleBarStyle": "custom",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": true,
+        "scminput": false,
+        "yaml": true,
+        "python": true
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "discord.detailsIdling": "Killjoy said I can take a rest",
+    "discord.largeImageIdling": "Killjoy said I can take a rest",
+    "discord.lowerDetailsIdling": "Killjoy said I can take a rest.",
+    "[javascript]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "files.associations": {
+        "*.js": "javascriptreact",
+        "*.css": "css"
+    },
+    "discord.detailsEditing": "Taking care of {file_name}",
+    "discord.largeImage": "Taking care of  a {LANG} file",
+    "git.autofetch": true,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "git.confirmSync": false,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "jupyter.askForKernelRestart": false,
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "discord.lowerDetailsNoWorkspaceFound": "{total_lines}",
+    "discord.lowerDetailsEditing": "Good. Analyze, then improve.",
+    "discord.lowerDetailsDebugging": "Good. Analyze, then improve.",
+    "editor.formatOnType": true,
+    "discord.removeRemoteRepository": true,
+    "workbench.iconTheme": "catppuccin-mocha",
+    "terminal.integrated.automationProfile.windows": {
+        "terminal.integrated.shellArgs.windows": [
+            "-ExecutionPolicy",
+            "Bypass"
+        ]
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "npm.keybindingsChangedWarningShown": true,
+    "[css]": {
+        "editor.defaultFormatter": ""
+    },
+    "python.defaultInterpreterPath": "/home/geoseismal/Personal/calistung/venv",
+    "vscode-pets.position": "explorer",
+    "vscode-pets.theme": "forest",
+    "vscode-pets.petColor": "black",
+    "vscode-pets.petType": "crab",
+    "workbench.editor.splitInGroupLayout": "vertical",
+    "qtForPython.uic.liveExecution": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "warmUp.changeCount": "30",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "cmake.configureOnOpen": true,
+    "githubPullRequests.pullBranch": "never",
+    "redhat.telemetry.enabled": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "git.openRepositoryInParentFolders": "never",
+    "vim.leader": " ",
+}
