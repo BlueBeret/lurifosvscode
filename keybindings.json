@@ -42,7 +42,8 @@
     {// go to file explorer when in editor, because editor is on the left of file explorer
         "key": "ctrl+h",
         "command": "workbench.files.action.focusFilesExplorer",
-        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+        //"when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+        "when": "vim.active && vim.mode != 'Insert'"
     },
     {// go to editor when in file explorer, because editor is on the left of file explorer
         "key": "ctrl+l",
@@ -57,7 +58,8 @@
     {
         "key": "a",
         "command": "explorer.newFile",
-        "when": "explorerViewletFocus"
+        // when focus on explorer and when not creating file (input)
+        "when": "explorerViewletFocus && !inputFocus"
     },
     { // Unbind unconditional default using "minus" (-) before command
         "key": "ctrl+0",
@@ -96,5 +98,10 @@
         "key": "ctrl+h",
         "command": "-editor.action.startFindReplaceAction",
         "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "ctrl+w",
+        "when": "editorTextFocus",
+        "command": "workbench.action.closeActiveEditor"
     }
 ]
